@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Delights - Home</title>
+    <link rel="stylesheet" href="global.css">
+    <style>
+        .scrolling-text {
+            white-space: nowrap;
+            overflow: hidden;
+            animation: scroll-left 10s linear infinite;
+        }
+
+        @keyframes scroll-left {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1 class="title">Welcome to Sweet Delights</h1>
+        <p>Name: Adel Mahmoud Soudi | ID: 221100060</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/about.html">About Us</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+            <li><a href="pages/registration.html">Register</a></li>
+            <li><a href="pages/calculator.html">Calculator</a></li>
+            <li><a href="https://www.gu.edu.eg/" target="_blank">University Website</a></li>
+        </ul>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <p>Home > Welcome</p>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <section class="content">
+            <div class="left-column">
+                <h2>Our Delicious Treats</h2>
+                <p>Welcome to Sweet Delights! Explore our wide variety of cakes, cookies, and treats made with love.</p>
+                <ul>
+                    <li>Freshly baked cakes</li>
+                    <li>Customized cupcakes</li>
+                    <li>Delicious cookies</li>
+                </ul>
+            </div>
+
+            <aside class="right-column">
+                <form>
+                    <label for="search">Search:</label>
+                    <input type="text" id="search" placeholder="Search here...">
+                    <button type="submit">Go</button>
+                </form>
+                <div class="scrolling-text">Check out our latest offers and discounts!</div>
+                <p>Advertisements here</p>
+            </aside>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Sweet Delights | 
+            <a href="mailto:Adel.Huessin@gu.edu.eg">Contact Us</a>| 
+            <a href="https://www.instagram.com/adel_soudi?igsh=MWFlMHY3N21menR3MA%3D%3D&utm_source=qr" target="_blank">Follow us on Instagram</a>
+        </p>
+    </footer>
+</body>
+</html>

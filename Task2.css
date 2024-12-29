@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.box {
+    height: 40px;
+}
+
+.red {
+    background-color: #FF0000;
+    width: 50%;
+}
+
+.blue {
+    background-color: #0000FE;
+    width: 50%;
+}
+
+.green {
+    background-color: green;
+    width: 100%;
+}
+
+.orange {
+    background-color: #FEA500;
+}
+
+.transparent {
+    background-color: transparent;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.fixed-width {
+    width: 80px;
+}
+
+.fixed-size {
+    width: 40px;
+    height: 40px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+           Name:          Adel Mahmoud Soudi 221100060
+           Course:        CSE211 Web Programming
+           Assignment:     Assignment No.3
+           Date:           12/30/2024
+           Description:     The purpose of this assignment to develop the html assignment 
+                             to style css
+
+  */                          

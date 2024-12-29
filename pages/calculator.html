@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="global.css">
+</head>
+<body>
+    <header>
+        <h1>Simple Calculator</h1>
+        <p>Name: Adel Mahmoud Soudi | ID: 221100060</p>
+    </header>
+    <main>
+        <form id="calculator-form">
+            <label for="num1">Number 1:</label>
+            <input type="number" id="num1" required>
+
+            <label for="num2">Number 2:</label>
+            <input type="number" id="num2" required>
+
+            <label for="operation">Operation:</label>
+            <select id="operation">
+                <option value="add">Addition</option>
+                <option value="subtract">Subtraction</option>
+                <option value="multiply">Multiplication</option>
+                <option value="divide">Division</option>
+            </select>
+
+            <button type="button" onclick="calculate()">Calculate</button>
+        </form>
+
+        <h2>Result: <span id="result">0</span></h2>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sweet Delights</p>
+    </footer>
+
+    <script>
+        function calculate() {
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+            var operation = document.getElementById('operation').value;
+            var result;
+
+            switch(operation) {
+                case 'add':
+                    result = num1 + num2;
+                    break;
+                case 'subtract':
+                    result = num1 - num2;
+                    break;
+                case 'multiply':
+                    result = num1 * num2;
+                    break;
+                case 'divide':
+                    result = num1 / num2;
+                    break;
+                default:
+                    result = 'Invalid operation';
+            }
+
+            document.getElementById('result').textContent = result;
+        }
+    </script>
+</body>
+</html>
